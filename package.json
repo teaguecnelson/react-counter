@@ -4,16 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/teaguecnelson/react-counter.git"
   },
-  "author": "",
+  "author": "Teague Nelson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/teaguecnelson/react-counter/issues"
   },
-  "homepage": "https://github.com/teaguecnelson/react-counter#readme"
+  "homepage": "https://github.com/teaguecnelson/react-counter#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-icons": "^2.2.3"
+  }
 }
