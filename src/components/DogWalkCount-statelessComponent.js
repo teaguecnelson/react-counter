@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Terrain from 'react-icons/lib/md/terrain'
 import Calendar from 'react-icons/lib/fa/calendar'
 
@@ -41,8 +42,8 @@ DogWalkCount.defaultProps = {
 	goal: 100
 }
 
-DogWalkCount.propsTypes = {
-	total: React.PropTypes.number,
-	park: React.PropTypes.number,
-	street: React.PropTypes.number,
+DogWalkCount.propTypes = {
+	total: PropTypes.number,
+	park: PropTypes.number,
+	street: PropTypes.number
 }

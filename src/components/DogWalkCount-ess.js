@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export class DogWalkCount extends React.Component {
 	percentToDecimal(decimal) {
@@ -39,9 +40,9 @@ DogWalkCount.defaultProps = {
 	goal: 100
 }
 
-DogWalkCount.propsTypes = {
-	total: React.PropTypes.number,
-	park: React.PropTypes.number,
-	street: React.PropTypes.number,
+DogWalkCount.propTypes = {
+	total: PropTypes.number,
+	park: PropTypes.number,
+	street: PropTypes.number
 }
 

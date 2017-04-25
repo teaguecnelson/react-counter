@@ -5,7 +5,7 @@ import Calendar from 'react-icons/lib/fa/calendar'
 export const DogWalkRow = ({destination, date, raining, offleash}) => (
 	<tr>
 		<td>
-			{date.getMonth()+1}/{date.getDate()}/{date.getFullYear()}
+			{date}
 		</td>
 		<td>
 			{destination}

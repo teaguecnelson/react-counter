@@ -1,32 +1,20 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { DogWalkCount } from './components/DogWalkCount-statelessFunction'
-import { DogWalkList } from './components/DogWalkList'
+import { App } from './components/App'
+import { Oops404 } from './components/Oops404'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
 window.React = React
 
 render(
-	<DogWalkCount />,
-
-	// <DogWalkList days = {[
-	// 	 {
-	// 	 	destination: "Park Slope",
-	// 	 	date: new Date("1/2/2017"),
-	// 	 	raining: true,
-	// 	 	offleash: false
-	// 	 },
-	// 	 {
-	// 	 	destination: "Franklin Ave",
-	// 	 	date: new Date("1/3/2017"),
-	// 	 	raining: true,
-	// 	 	offleash: false
-	// 	 },
-	// 	 {
-	// 	 	destination: "The Boathouse",
-	// 	 	date: new Date("1/8/2017"),
-	// 	 	raining: false,
-	// 	 	offleash: true
-	// 	 }
-	// ]}/>,
+	<Router>
+		<div>
+			<Route exact path="/" component={App} />
+			<Route path="/list-days" component={App} />
+			<Route path="/add-day" component={App} />
+		</div>
+	</Router>,
 	document.getElementById('react-container')
 )
+
+// <Route path="/*" component={Oops404}/>
